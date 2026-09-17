@@ -1,32 +1,76 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="vi">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Chapter 1 - Web Truyện</title>
-<style>
-body{margin:0;background:#222;color:#eee;font-family:Arial,sans-serif}
-.top{position:sticky;top:0;background:#111;padding:14px;text-align:center}
-.reader{max-width:800px;margin:auto;text-align:center}
-.page{width:100%;display:block;margin:0 auto}
-.note{padding:35px 20px;color:#aaa}
-a{color:white;margin:0 15px;text-decoration:none}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 1 - Tên Bộ Truyện 1</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+            padding: 20px 10px;
+            text-align: center;
+        }
+        .nav-bar {
+            max-width: 800px;
+            margin: 0 auto 20px auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1e293b;
+            padding: 10px 20px;
+            border-radius: 8px;
+        }
+        .nav-btn {
+            color: #38bdf8;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .nav-btn:hover { text-decoration: underline; }
+        .chapter-title {
+            margin-bottom: 20px;
+            font-size: 22px;
+            color: #ffffff;
+        }
+        .reader-container {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        .reader-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 4px;
+        }
+    </style>
 </head>
 <body>
-<a href="../../truyen-1.html">← Trở về Danh sách Chapter</a>
-<div class="top">
-<a href="../../index.html">← Danh sách</a>
-<strong>Chapter 1</strong>
-<a href="#">Chapter sau →</a>
-</div>
-<div class="reader">
-<div class="note">Đặt ảnh các trang truyện vào thư mục này rồi thêm tên file vào HTML theo mẫu bên dưới.</div>
-<!-- Ví dụ:
-<img class="page" src="001.jpg">
-<img class="page" src="002.jpg">
-<img class="page" src="003.jpg">
--->
-</div>
+
+    <div class="nav-bar">
+        <a href="../../truyen-1.html" class="nav-btn">← Danh sách Chapter</a>
+        <span style="color: #94a3b8;">Chapter 1</span>
+        <span style="color: #64748b;">Chapter tiếp →</span>
+    </div>
+
+    <h1 class="chapter-title">Chapter 1: Khởi đầu</h1>
+
+    <div class="reader-container">
+        <!-- Chèn các thẻ ảnh truyện của bạn vào đây -->
+        <img src="https://picsum.photos/800/1200?random=1" alt="Trang 1">
+        <img src="https://picsum.photos/800/1200?random=2" alt="Trang 2">
+    </div>
+
+    <div class="nav-bar" style="margin-top: 30px;">
+        <a href="../../truyen-1.html" class="nav-btn">← Danh sách Chapter</a>
+        <span style="color: #94a3b8;">Hết Chapter 1</span>
+        <span style="color: #64748b;">Chapter tiếp →</span>
+    </div>
+
 </body>
 </html>
