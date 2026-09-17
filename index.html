@@ -1,28 +1,106 @@
-<!doctype html>
-<html lang="vi">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Web Truyện</title>
-<style>
-body{margin:0;background:#fafafa;color:#222;font-family:Arial,sans-serif}
-header{background:#fff;border-bottom:1px solid #ddd;padding:18px 20px}
-.wrap{max-width:900px;margin:auto}
-.logo{font-size:24px;font-weight:700}
-main{padding:30px 20px}.book{background:white;border:1px solid #ddd;border-radius:12px;padding:18px;margin:15px 0}
-a{color:#222;text-decoration:none}.btn{display:inline-block;background:#222;color:white;padding:10px 14px;border-radius:8px;margin-top:8px}
-.small{color:#777;font-size:14px}
+}
+
+    .nav {
+        display: none;
+    }
+
+    .hero {
+        margin: 20px 15px;
+        padding: 35px 20px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .container {
+        padding: 10px 15px 40px;
+    }
+
+    .story {
+        flex-direction: column;
+    }
+
+    .cover {
+        width: 100%;
+        height: 220px;
+    }
+
+    .story-info h2 {
+        font-size: 24px;
+    }
+}
 </style>
 </head>
+
 <body>
-<header><div class="wrap logo">📚 WEB TRUYỆN</div></header>
-<main class="wrap">
-<h1>Danh sách truyện</h1>
-<div class="book">
-<h2>Truyện mẫu</h2>
-<p class="small">Một bộ truyện mẫu để m thay bằng truyện của m.</p>
-<a class="btn" href="chapters/chapter-1/index.html">Đọc Chapter 1</a>
-</div>
+
+<header>
+    <div class="header-inner">
+        <div class="logo">📚 WEB TRUYỆN</div>
+
+        <div class="nav">
+            <a href="#">Trang chủ</a>
+            <a href="#truyen">Truyện</a>
+            <a href="#chapter">Chapter</a>
+        </div>
+    </div>
+</header>
+
+<section class="hero">
+    <h1>Kho truyện của tôi ✨</h1>
+    <p>Đọc truyện online — đơn giản, nhẹ nhàng và miễn phí.</p>
+</section>
+
+<main class="container" id="truyen">
+
+    <h2 class="section-title">📖 Truyện mới</h2>
+
+    <div class="story">
+
+        <div class="cover">
+            TRUYỆN<br>MẪU
+        </div>
+
+        <div class="story-info">
+
+            <h2>Truyện mẫu</h2>
+
+            <p class="description">
+                Một bộ truyện mẫu để làm thử giao diện.
+                Sau này có thể thay phần này bằng tên truyện,
+                mô tả và thông tin truyện thật của bạn.
+            </p>
+
+            <div class="tags">
+                <span class="tag">Truyện tranh</span>
+                <span class="tag">Đang cập nhật</span>
+            </div>
+
+            <a class="button" href="chapters/chapter-1/">
+                Đọc Chapter 1 →
+            </a>
+
+        </div>
+
+    </div>
+
+    <h2 class="section-title" id="chapter">📚 Danh sách Chapter</h2>
+
+    <div class="chapters">
+
+        <div class="chapter">
+            <span>Chapter 1</span>
+            <a href="chapters/chapter-1/">Đọc →</a>
+        </div>
+
+    </div>
+
 </main>
+
+<footer>
+    © 2026 Web Truyện — Made with ❤️
+</footer>
+
 </body>
 </html>
