@@ -2,20 +2,91 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tên Bộ Truyện 1</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .back-btn {
+            display: inline-block;
+            color: #38bdf8;
+            text-decoration: none;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        .back-btn:hover { text-decoration: underline; }
+        .comic-header {
+            background-color: #1e293b;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+        .comic-header h1 {
+            color: #38bdf8;
+            margin-bottom: 10px;
+        }
+        .meta-info {
+            color: #94a3b8;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        .description {
+            color: #cbd5e1;
+            line-height: 1.6;
+            font-size: 15px;
+        }
+        .chapter-section h2 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #334155;
+            padding-bottom: 8px;
+        }
+        .chapter-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .chapter-item a {
+            display: block;
+            background-color: #1e293b;
+            padding: 12px 16px;
+            border-radius: 8px;
+            color: #f8fafc;
+            text-decoration: none;
+            transition: background 0.2s;
+        }
+        .chapter-item a:hover {
+            background-color: #334155;
+            color: #38bdf8;
+        }
+    </style>
 </head>
 <body>
-    <a href="index.html">← Trở về Trang chủ</a>
-    
-    <h1>Tên Bộ Truyện 1</h1>
-    <p><strong>Thể loại:</strong> Truyện tranh / Ngôn tình / Hành động</p>
-    <p><strong>Mô tả:</strong> Đây là nội dung giới thiệu chi tiết về bộ truyện này...</p>
 
-    <h2>Danh Sách Chapter</h2>
-    <ul>
-        <li><a href="chapters/chapter-1/index.html">Chapter 1: Khởi đầu</a></li>
-        <!-- Sau này có chap mới bạn thêm đường dẫn ở đây -->
-        <!-- <li><a href="chapters/chapter-2/index.html">Chapter 2</a></li> -->
-    </ul>
+    <a href="index.html" class="back-btn">← Trở về Trang chủ</a>
+
+    <div class="comic-header">
+        <h1>Tên Bộ Truyện 1</h1>
+        <div class="meta-info"><strong>Thể loại:</strong> Truyện tranh / Hành động / Phiêu lưu</div>
+        <p class="description">Đây là nội dung giới thiệu chi tiết về bộ truyện này. Bạn có thể thay đổi văn bản mô tả ở đây tùy ý.</p>
+    </div>
+
+    <div class="chapter-section">
+        <h2>Danh Sách Chapter</h2>
+        <ul class="chapter-list">
+            <li class="chapter-item"><a href="chapters/chapter-1/index.html">Chapter 1: Khởi đầu</a></li>
+            <!-- Thêm chapter mới ở đây -->
+        </ul>
+    </div>
+
 </body>
 </html>
